@@ -4,6 +4,8 @@ import re
 Program to format a message into all caps and only including the letters A-Z,.!
 """
 
+# This is a change!
+
 def read_message(fn):
     text = ''
 
@@ -11,7 +13,7 @@ def read_message(fn):
         for line in f:
             text += line
 
-    return text
+    return text # Returns the text
 
 
 not_valid = re.compile(r"[^A-Z ,.!]")
